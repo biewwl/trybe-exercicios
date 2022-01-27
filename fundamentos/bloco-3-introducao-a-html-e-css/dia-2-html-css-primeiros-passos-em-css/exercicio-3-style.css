@@ -1,0 +1,40 @@
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size:3em;
+}
+
+body {
+    font-size: 16px;
+}
+
+#neg {
+    font-weight: bold;
+}
+
+#ita {
+    font-style: italic;
+}
+
+#sub {
+    text-decoration: underline;
+}
+
+#meio {
+    text-align: center;
+}
+
+#ama {
+    background-color: yellow;
+}
+
+#ver {
+    background-color: red;
+}
+
+#mar {
+    background-color: brown;
+}
