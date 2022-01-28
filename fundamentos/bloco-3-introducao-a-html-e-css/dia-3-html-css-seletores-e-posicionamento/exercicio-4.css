@@ -1,0 +1,34 @@
+div:hover {
+    border-style: dotted;
+    border-color: blue;
+}
+
+#um {
+    background-color: yellow;
+    color: rgb(121, 121, 19);
+}
+
+#dois {
+    background-color: green;
+    color: rgb(102, 255, 102);
+}
+
+#tres {
+    background-color: rgb(197, 133, 133);
+    color: brown;
+    height: 40px;
+}
+
+#quatro {
+    background-color: rgb(64, 21, 121);
+    color: rgb(136, 136, 245);
+}
+
+#cinco {
+    background-color: beige;
+    color: rgb(146, 146, 144);
+}
+
+.imp {
+    font-style: italic;
+}
