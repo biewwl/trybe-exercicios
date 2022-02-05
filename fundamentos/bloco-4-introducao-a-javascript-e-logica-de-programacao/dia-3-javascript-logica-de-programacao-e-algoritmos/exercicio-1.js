@@ -39,7 +39,7 @@ console.log(maiorString, menorString)
 
 
 let limite = 50
-let numeros = []
+let maior = 0
 
 for (let numero = 2; numero <= limite; numero += 1) {
     let primo = true;
@@ -49,7 +49,9 @@ for (let numero = 2; numero <= limite; numero += 1) {
             primo = false;
         }
     }
-    if (primo) numeros.push(numero);
+    if (primo === true) {
+        maior = numero
+    }
 }
 
-console.log(numeros);
+console.log(maior);
