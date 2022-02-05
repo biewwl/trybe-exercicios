@@ -37,3 +37,19 @@ console.log(maiorString, menorString)
 
 // Descobrir maior número primo entre 0 e 50
 
+
+let limite = 50
+let numeros = []
+
+for (let numero = 2; numero <= limite; numero += 1) {
+    let primo = true;
+
+    for (let divisor = 2; divisor < numero; divisor += 1) {
+        if (numero % divisor === 0) {
+            primo = false;
+        }
+    }
+    if (primo) numeros.push(numero);
+}
+
+console.log(numeros);
