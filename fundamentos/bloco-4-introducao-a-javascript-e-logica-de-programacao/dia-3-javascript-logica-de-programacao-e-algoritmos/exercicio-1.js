@@ -57,3 +57,31 @@ for (let numero = 2; numero <= fim; numero += 1) {
 }
 
 console.log(maior);
+
+// BÔNUS
+
+// Imprimir um quadrado com os lados de um tamanho de uma variável
+
+let n = 5;
+let linha = '';
+let caractere = '*';
+
+for (let i = 0; i < n; i += 1) {
+    linha += caractere;
+}
+
+for (let id = 0; id < n; id += 1) {
+    console.log(linha);
+}
+
+// Imprima um triângulo retângulo
+
+let n = 5;
+let linha = '';
+let caractere = '*';
+
+for (let i = 0; i < n; i += 1) {
+    linha += caractere;
+    console.log(linha);
+}
+
