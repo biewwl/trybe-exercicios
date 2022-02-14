@@ -168,7 +168,7 @@ function clickColor () {
 
     if (e.target.className === 'task selected') {
       e.target.className = 'task'
-    } else {e.target.className = 'task selected'}
+    } else if (e.target.className === 'task') {e.target.className = 'task selected'};
   })
 }
 
