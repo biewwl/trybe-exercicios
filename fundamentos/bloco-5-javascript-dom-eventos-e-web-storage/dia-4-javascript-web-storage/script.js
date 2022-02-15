@@ -2,7 +2,7 @@
 document.body.style.backgroundColor = localStorage.getItem('background');
 document.body.style.color = localStorage.getItem('Cor da Fonte');
 document.body.style.fontSize = localStorage.getItem('Tamanho da Fonte');
-document.body.style.lineHeight = localStorage.getItem('Espaçamento de linhas');
+document.body.style.lineHeight = localStorage.getItem('Espaçamento de Linhas');
 document.body.style.fontFamily = localStorage.getItem('Fonte')
 
 // Mudar cor de background
