@@ -1,0 +1,14 @@
+body {
+    width: 1000px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.article {
+    margin-left: 100px;
+    width: 800px;
+}
+
+
