@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercício 1</title>
+</head>
+<body>
+  <header>
+    <h1>TrybeTrip</h1>
+  </header>
+  <main>
+    <form action="" method="get">
+      <div id="nome-email" class="div-form">
+        <label for="name"></label>Nome:
+        <input type="text" name="name" minlength="10" maxlength="40" id="name" required><br><br>
+        <label for="email"></label>Email:
+        <input type="email" name="email" minlength="10" maxlength="50" required id="email">
+      </div>
+      <div id="destiny" class="div-form">
+        <input type="radio" name="destiny" id="destiny1">
+        <label for="destiny1">Cidade</label>
+        <input type="radio" name="destiny" id="destiny2">
+        <label for="destiny2">Campo</label>
+        <input type="radio" name="destiny" id="destiny3">
+        <label for="destiny3">Praia</label>
+        <input type="radio" name="destiny" id="destiny4">
+        <label for="destiny4">Montanhas</label>
+      </div>
+      <div id="why-you" class="div-form">
+        <fieldset>
+          <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
+          <textarea name="why" id="why-win" cols="30" maxlength="500" rows="10"></textarea>
+        </fieldset>
+      </div>
+      <div id="data" class="div-form">
+        <label for="data">Data para viagem:</label>
+        <input type="date" name="date" required id="data">
+      </div>
+      <div id="check" class="div-form">
+        <input type="checkbox" name="ofert" id="oferta">
+        <label for="oferta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
+        <input type="checkbox" name="usage-image" id="usage-image" required class="div-form">
+        <label for="usage-image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </div>
+      <div id="sendReset" class="div-form">
+        <button type="submit" id="send">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #036b52;
+  font-family: sans-serif;
+}
+
+main, header{
+  margin-left: 20px;
+  background-color: white;
+  padding: 15px;
+  width: 80%;
+}
+
+header {
+  padding-bottom: 0;
+  margin-top: 20px;
+  border-top-right-radius: 10px;
+  color: #036b52;
+}
+
+main {
+  border-bottom-left-radius: 10px;
+}
+
+
+.div-form {
+  margin-top: 20px;
+}
+
+fieldset {
+  width: 80%;
+  padding: 10px;
+}
+
+fieldset textarea {
+  width: 100%;
+  margin: 0, auto;
+  border-color: #036b52;
+}
+
+button {
+  background-color: #036b52;
+  color: white;
+  padding: 5px;
+  border: 0;
+}
