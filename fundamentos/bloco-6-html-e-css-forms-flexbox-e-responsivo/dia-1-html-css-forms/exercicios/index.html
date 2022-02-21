@@ -15,15 +15,15 @@
     <h1 class="text-center display-4">TrybeTrip</h1>
   </header>
   <main class="container">
-    <form action="" method="get">
+    <form action="#" id="form" method="get">
       <div class="input-group mb-3 container">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">@</span>
         </div>
-        <input type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1" minlength="10" maxlength="40" id="name" name="name" required>
+        <input type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1" id="name" name="name">
       </div>
       <div class="input-group mb-3 container">
-        <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" name="email" aria-describedby="basic-addon2" minlength="10" maxlength="50" required id="email">
+        <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" name="email" aria-describedby="basic-addon2" id="email">
         <div class="input-group-append">
           <span class="input-group-text" id="basic-addon2">@example.com</span>
         </div>
@@ -63,7 +63,7 @@
           <label class="form-check-label" for="oferta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="usage-image" id="usage-image" required>
+          <input class="form-check-input" type="checkbox" name="usage-image" id="usage-image">
           <label class="form-check-label" for="usage-image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
         </div>
       </div>
@@ -73,6 +73,7 @@
       </div>
     </form>
   </main>
+  <script src ="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
