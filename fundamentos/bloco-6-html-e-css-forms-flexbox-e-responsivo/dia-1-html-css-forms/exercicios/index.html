@@ -4,50 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Exercício 1</title>
 </head>
 <body>
-  <header>
-    <h1>TrybeTrip</h1>
+  <header class="container">
+    <h1 class="text-center display-4">TrybeTrip</h1>
   </header>
-  <main>
+  <main class="container">
     <form action="" method="get">
-      <div id="nome-email" class="div-form">
-        <label for="name"></label>Nome:
-        <input type="text" name="name" minlength="10" maxlength="40" id="name" required><br><br>
-        <label for="email"></label>Email:
-        <input type="email" name="email" minlength="10" maxlength="50" required id="email">
+      <div class="input-group mb-3 container">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1" minlength="10" maxlength="40" id="name" name="name" required>
       </div>
-      <div id="destiny" class="div-form">
-        <input type="radio" name="destiny" id="destiny1">
-        <label for="destiny1">Cidade</label>
-        <input type="radio" name="destiny" id="destiny2">
-        <label for="destiny2">Campo</label>
-        <input type="radio" name="destiny" id="destiny3">
-        <label for="destiny3">Praia</label>
-        <input type="radio" name="destiny" id="destiny4">
-        <label for="destiny4">Montanhas</label>
+      <div class="input-group mb-3 container">
+        <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" name="email" aria-describedby="basic-addon2" minlength="10" maxlength="50" required id="email">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
       </div>
-      <div id="why-you" class="div-form">
-        <fieldset>
-          <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
-          <textarea name="why" id="why-win" cols="30" maxlength="500" rows="10"></textarea>
-        </fieldset>
+      <div class="container" id="destiny">
+        <p class="lead text-muted">Escolha seu destino:</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="destiny" id="destiny1">
+          <label class="form-check-label" for="destiny1">Cidade</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="destiny" id="destiny2">
+          <label class="form-check-label" for="destiny2">Campo</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="destiny" id="destiny3">
+          <label class="form-check-label" for="destiny3">Praia</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="destiny" id="destiny4">
+          <label class="form-check-label" for="destiny4">Montanhas</label>
+        </div>
       </div>
-      <div id="data" class="div-form">
-        <label for="data">Data para viagem:</label>
+      <div class="container input-group">
+        <div class="input-group-prepend">
+        </div>
+        <textarea class="form-control" placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?" aria-label="With textarea" maxlength="500"></textarea>
+      </div>
+      <div  class="container" id="data">
+        <label class="lead text-muted" for="data">Data para viagem:</label>
         <input type="date" name="date" required id="data">
       </div>
-      <div id="check" class="div-form">
-        <input type="checkbox" name="ofert" id="oferta">
-        <label for="oferta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
-        <input type="checkbox" name="usage-image" id="usage-image" required class="div-form">
-        <label for="usage-image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      <div class="container">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ofert" id="oferta">
+          <label class="form-check-label" for="oferta">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="usage-image" id="usage-image" required>
+          <label class="form-check-label" for="usage-image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        </div>
       </div>
-      <div id="sendReset" class="div-form">
-        <button type="submit" id="send">Enviar</button>
-        <button type="reset">Limpar</button>
+      <div  class="container" id="sendReset">
+        <button class="btn btn-primary mb-2" type="submit" id="send">Enviar</button>
+        <button class="btn btn-danger mb-2" type="reset">Limpar</button>
       </div>
     </form>
   </main>
