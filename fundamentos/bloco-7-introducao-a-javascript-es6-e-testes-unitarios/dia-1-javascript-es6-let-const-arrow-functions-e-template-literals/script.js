@@ -58,3 +58,18 @@ btn.addEventListener('click', ()=> {
   clickCount += 1;
   count.innerText = clickCount;
 })
+
+// Exercício 4
+
+const string = 'Tryber x aqui!';
+const retornar = nome => string.replace(/x/g, nome);
+
+// Exercício 5
+
+const stringRetornada = retornar('Gabriel');
+
+const skills = ['JavaScript', 'CSS', 'HTML', 'Git', 'GitHub'];
+
+const naoSei = (retorno) => `${retorno} Minhas cinco principais habilidades são: ${skills.sort()}`;
+
+console.log(naoSei(stringRetornada))
