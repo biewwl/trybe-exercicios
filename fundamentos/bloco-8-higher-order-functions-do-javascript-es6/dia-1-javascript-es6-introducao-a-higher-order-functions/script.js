@@ -78,7 +78,7 @@ const dragon = {
   damage: undefined,
 };
 
-// const battleMembers = { mage, warrior, dragon };
+const battleMembers = { mage, warrior, dragon };
 
 const dragonDamage = () => {
   return Math.round(Math.random() * (dragon.strength - 15) + 15);
@@ -102,11 +102,60 @@ const dano = (qntdMana) => {
   return 'Não possui mana suficiente';
 }
 
-const func = (manaValue) => {
+const danoMana = () => {
   return {
-    Dano: dano(manaValue),
-    'Mana Gasta': mana(manaValue),
+    Dano: dano(mage.mana),
+    'Mana Gasta': mana(mage.mana),
   }
 }
 
-console.log(func(mage.mana));
+const gameActions = {
+  warriorToDragon: (func) => {
+    const damage = func();
+    warrior.damage = damage;
+    dragon.healthPoints -= damage;
+  },
+  mageToDragon: (func) => {
+    const damage = func().Dano;
+    const mana = func()['Mana Gasta'];
+    mage.damage = damage;
+    dragon.healthPoints -= damage;
+    mage.mana -= mana;
+  },
+  dragonToWarriorAndMage: (func) => {
+    const damage = func();
+    dragon.damage = damage;
+    warrior.healthPoints -= damage;
+    mage.healthPoints -= damage;
+  },
+  warResult: () => {
+    const warriorStats = {
+      'Vida': warrior.healthPoints,
+      'Dano Causado': warrior.damage,
+    };
+    const mageStats = {
+      'Vida': mage.healthPoints,
+      'Dano Causado': mage.damage,
+      'Mana': mage.mana,
+      'Mana usada': 125 - mage.mana,
+    };
+    const dragonStats = {
+      'Vida': dragon.healthPoints,
+      'Dano Causado': dragon.damage,
+    };
+    return {
+      Warrior: warriorStats,
+      Mago: mageStats,
+      Dragon: dragonStats,
+    };
+  }
+}
+
+const result = () => {
+  gameActions.warriorToDragon(warriorDamage);
+  gameActions.mageToDragon(danoMana);
+  gameActions.dragonToWarriorAndMage(dragonDamage);
+  return battleMembers;
+}
+
+console.log(result());
