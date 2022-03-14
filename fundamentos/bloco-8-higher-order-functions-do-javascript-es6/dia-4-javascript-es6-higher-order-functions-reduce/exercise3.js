@@ -63,12 +63,6 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-// const nomesAutores = () => books.map((e) => e.author.name);
+const mediaIdade = books.reduce((iv, cv) => iv + (cv.releaseYear - cv.author.birthYear), 0) / books.length;
 
-const autores = () => {
-  let resultado = books.reduce((e1, e2,) => e1.concat(`${e2.author.name}, `), '').replace(/, $/, '.');
-  return resultado;
-};
-
-// console.log(nomesAutores().toString().replace(/,/g, ', '));
-console.log(autores());
+console.log(mediaIdade);
