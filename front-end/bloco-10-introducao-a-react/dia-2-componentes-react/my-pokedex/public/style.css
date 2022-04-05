@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+header {
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  align-items: center;
+  border-bottom-left-radius: 50%;
+  background-color: white;
+}
+
+#title {
+  font-size: 4em;
+  color: rgb(145, 145, 145);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.5em;
+}
