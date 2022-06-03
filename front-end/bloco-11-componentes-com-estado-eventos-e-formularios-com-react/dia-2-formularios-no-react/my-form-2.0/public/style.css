@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  background-color: rgb(241, 255, 240);
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+fieldset {
+  padding: 20px;
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(122, 194, 122);
+  box-shadow: rgb(190, 190, 190) 2px 2px 10px;
+}
+
+legend {
+  font-size: 1.3em;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  height: 25px;
+  border: 0;
+  border-left: 3px solid rgb(110, 201, 110);
+  margin-top: 10px;
+  padding: 5px;
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+  border: 0;
+  box-shadow: none;
+  border-left: 3px solid rgb(110, 201, 110);
+  outline: 0;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+input[type=radio] {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+#home {
+  background-color: aqua;
+}
+
+#cargo {
+  transition: 0.8s;
+}
+
+#cargo:focus {
+  background-color: rgb(255, 255, 215);
+}
+
+#buttons {
+  padding: 10px;
+}
+
+#submmit, #reset {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+#submmit {
+  background-color: rgb(129, 255, 129);
+  border: 0;
+  box-shadow: rgb(190, 190, 190) 2px 2px 10px;
+}
+
+#reset {
+  background-color: rgb(255, 129, 129);
+  border: 0;
+  box-shadow: rgb(190, 190, 190) 2px 2px 10px;
+}
